@@ -1,13 +1,18 @@
 # PreWorld
 
 > **Semi-Supervised Vision-Centric 3D Occupancy World Model for Autonomous Driving**
+>
+> *ICLR 2025*
 
 
 
 ## TODO
 
 - [x] Initial commit
-- [ ] Model zoo
+- [x] Model zoo
+- [ ] arXiv version
+- [ ] Code for nuPlan dataset (3D Occupancy Prediction)
+- [ ] Code for LightWheelOcc dataset (3D Occupancy Prediction)
 
 
 
@@ -31,21 +36,25 @@ Understanding world dynamics is crucial for planning in autonomous driving. Rece
 
 ## Model Zoo
 
-Coming soon... 🏗️ 🚧 🔨
-
 #### 3D Occupancy Prediction (on Occ3D-nuScenes Benchmark)
 
 |          Method           | mIoU  |                            Config                            | Checkpoints |
 | :-----------------------: | :---: | :----------------------------------------------------------: | :---------: |
-| PreWorld (+ Pre-training) | 34.69 | [config](configs/preworld/nuscenes/preworld-7frame-finetune.py) |    model    |
+| PreWorld (+ Pre-training) | 34.69 | [config](configs/preworld/nuscenes/preworld-7frame-finetune.py) |    [model](https://huggingface.co/FortyTwoo/PreWorld/blob/main/preworld_nuscenes_3docc_stbase_pretrained.pth)    |
 
 #### 4D Occupancy Forecasting (on Occ3D-nuScenes Benchmark)
 
 |          Method           | Avg mIoU |                            Config                            | Checkpoints |
 | :-----------------------: | :------: | :----------------------------------------------------------: | :---------: |
-| PreWorld (+ Pre-training) |   9.55   | [config](configs/preworld/nuscenes-temporal/preworld-7frame-finetune-traj.py) |    model    |
+| PreWorld (+ Pre-training) |   9.55   | [config](configs/preworld/nuscenes-temporal/preworld-7frame-finetune-traj.py) |    [model](https://huggingface.co/FortyTwoo/PreWorld/blob/main/preworld_nuscenes_4docc_stbase_pretrained.pth)    |
 
+Coming soon... 🏗️ 🚧 🔨
 
+#### 3D Occupancy Prediction (on OpenScene Benchmark)
+
+|          Method           | mIoU  |                            Config                            | Checkpoints |
+| :-----------------------: | :---: | :----------------------------------------------------------: | :---------: |
+| PreWorld (+ nuPlan Pre-training, 15000 scenes) | 19.85 | config |    model    |
 
 ## Acknowledgement
 
@@ -53,6 +62,10 @@ Many thanks to these excellent open source projects:
 
 - [RenderOcc](https://github.com/pmj110119/RenderOcc)
 - [Occ3D](https://github.com/Tsinghua-MARS-Lab/Occ3D)
+
+- [OpenScene](https://github.com/OpenDriveLab/OpenScene)
+- [LightWheelOcc](https://github.com/OpenDriveLab/LightwheelOcc)
+
 - [OccWorld](https://github.com/wzzheng/OccWorld)
 - [AD-MLP](https://github.com/E2E-AD/AD-MLP)
 
