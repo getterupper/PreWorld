@@ -1,6 +1,6 @@
 # PreWorld
 
-> **Semi-Supervised Vision-Centric 3D Occupancy World Model for Autonomous Driving**
+> **Semi-Supervised Vision-Centric 3D Occupancy World Model for Autonomous Driving**  [[paper](https://arxiv.org/abs/2502.07309)]
 >
 > *ICLR 2025*
 
@@ -10,7 +10,7 @@
 
 - [x] Initial commit
 - [x] Model zoo
-- [ ] arXiv version
+- [x] arXiv version
 - [ ] Code for nuPlan dataset (3D Occupancy Prediction)
 - [ ] Code for LightWheelOcc dataset (3D Occupancy Prediction)
 
@@ -56,6 +56,8 @@ Coming soon... 🏗️ 🚧 🔨
 | :-----------------------: | :---: | :----------------------------------------------------------: | :---------: |
 | PreWorld (+ nuPlan Pre-training, 15000 scenes) | 19.85 | config |    model    |
 
+
+
 ## Acknowledgement
 
 Many thanks to these excellent open source projects:
@@ -69,3 +71,16 @@ Many thanks to these excellent open source projects:
 - [OccWorld](https://github.com/wzzheng/OccWorld)
 - [AD-MLP](https://github.com/E2E-AD/AD-MLP)
 
+
+
+## Bibtex
+If you find this work useful, please consider citing:
+
+```
+@article{li2025semi,
+  title={Semi-Supervised Vision-Centric 3D Occupancy World Model for Autonomous Driving},
+  author={Li, Xiang and Li, Pengfei and Zheng, Yupeng and Sun, Wei and Wang, Yan and Chen, Yilun},
+  journal={arXiv preprint arXiv:2502.07309},
+  year={2025}
+}
+```
